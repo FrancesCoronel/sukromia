@@ -1,4 +1,4 @@
-![](https://github.com/fvcproductions/sukromia/raw/master/src/img/logo.png)
+![](https://github.com/fvcproductions/sukromia/blob/master/src/img/logo.png?raw=true)
 
 # Sukromia
 
