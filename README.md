@@ -1,6 +1,6 @@
-![](src/img/logo.png)
+![](https://github.com/fvcproductions/sukromia/raw/master/src/img/logo.png)
 
-# sukromia
+# Sukromia
 
 [![Github Issues](https://img.shields.io/github/issues/fvcproductions/sukromia.svg?style=flat-square)](https://github.com/fvcproductions/sukromia/issues) [![GitHub  Pull-Requests](https://img.shields.io/github/issues-pr/fvcproductions/sukromia.svg?style=flat-square)](https://github.com/fvcproductions/sukromia/pulls) [![MIT License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square)](http://paypal.me/fvcproductions)
 
