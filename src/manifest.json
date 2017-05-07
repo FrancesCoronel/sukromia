@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "Sukromia",
+    "description": "Allows any messaging service to instantly become safe and secure.",
+    "version": "1.0",
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "chrome://favicon/",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "icons": {
+        "16": "img/icon.png",
+        "48": "img/iconLauncher.png",
+        "128": "img/iconStore.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "img/iconLauncher.png",
+            "38": "img/iconLauncher.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+        "js": ["js/popup.js", "js/bootstrap/bootstrap.min.js"],
+        "css": ["css/style.css", "css/bootstrap/bootstrap.min.css"],
+        "matches": ["http://*/*", "https://*/*"],
+        "run_at": "document_end",
+        "all_frames": true
+    }]
+}
