@@ -1,16 +1,14 @@
+![](src/img/logo.png)
+
 # sukromia
 
 [![Github Issues](https://img.shields.io/github/issues/fvcproductions/sukromia.svg?style=flat-square)](https://github.com/fvcproductions/sukromia/issues) [![GitHub  Pull-Requests](https://img.shields.io/github/issues-pr/fvcproductions/sukromia.svg?style=flat-square)](https://github.com/fvcproductions/sukromia/pulls) [![MIT License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org) [![Donate via PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square)](http://paypal.me/fvcproductions)
-
-![](src/img/logo.png)
 
 Sukromia is an in-browser encryption tool that allows any messaging service to instantly become safe and secure. Our Chrome extension enables users to secure messages directly on the websites and applications they already use (e-mail, Facebook, Slack, etc.).
 
 We recognize Internet security as more important than ever and wanted to create a way to make it easy for a user to send and receive messages more securely on whichever social platform you use. Our goal is to protect the privacy of Internet users, regardless of their skills or the application on which they communicate.
 
 ## Installation
-
-You generate the public and private keys using our website [`fvcproductions.github.io/sukromia`](http://fvcproductions.github.io/sukromia).
 
 To install the Chrome extension...
 
