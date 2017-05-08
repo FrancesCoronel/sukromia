@@ -4,16 +4,21 @@
     "description": "Allows any messaging service to instantly become safe and secure.",
     "version": "1.0",
     "permissions": [
+        "storage",
+        "contextMenus",
         "tabs",
-        "activeTab",
-        "chrome://favicon/",
-        "http://*/*",
-        "https://*/*"
+        "activeTab"
     ],
     "icons": {
         "16": "img/icon.png",
         "48": "img/iconLauncher.png",
         "128": "img/iconStore.png"
+    },
+    "background": {
+        "scripts": [
+            "js/vendor/cryptojs/rollups/aes.js",
+            "js/min/sukromia.min.js"
+        ]
     },
     "browser_action": {
         "default_icon": {
@@ -21,12 +26,5 @@
             "38": "img/iconLauncher.png"
         },
         "default_popup": "popup.html"
-    },
-    "content_scripts": [{
-        "js": ["js/popup.js", "js/bootstrap/bootstrap.min.js"],
-        "css": ["css/style.css", "css/bootstrap/bootstrap.min.css"],
-        "matches": ["http://*/*", "https://*/*"],
-        "run_at": "document_end",
-        "all_frames": true
-    }]
+    }
 }

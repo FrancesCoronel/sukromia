@@ -6,74 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Allows any messaging service to instantly become safe and secure.">
     <meta name="author" content="FVCproductions">
-    <link rel="icon" href="../../favicon.ico">
     <title>Sukromia</title>
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap CSS -->
     <link href="css/vendor/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    <!-- Font Awesome -->
+    <link href="css/vendor/font-awesome/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link href="css/min/style.min.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="container">
         <img class="img-fluid" src="img/logo.png">
-        <br>
         <hr>
-        <form>
-            <h5>Generate your public & private keys 🔑</h5>
-            <div class="form-group">
-                <small class="form-text text-muted">You can share your public key with your friends.</small>
-                <br>
-                <p>Public Key:</p>
-                <p id="publicKey">(Your Public Key Will Display Here)</p>
-                <p>Private Key:</p>
-                <p id="txtPrivateKey">(Your Private Key Will Display Here)</p>
-                <button onclick="mkKey()" class="btn btn-success">Generate Keys</button>
-            </div>
-            <hr>
-            <h5>Encrypt & decrypt messages with your friends! 💬</h5>
-            <br>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Enter a public key</label>
-                <input id="Key" type="text" class="form-control" placeholder="The public key...">
-            </div>
-            <div class="form-group">
-                <label>Enter text that you want to encrypt or decrypt.</label>
-                <textarea class="form-control" id="originalText" rows="3" placeholder="Text you want to encrypt or decrypt"></textarea>
-            </div>
-            <div class="form-group">
-                <table style="width:100%">
-                    <tr>
-                        <td>
-                            <button id="performEncrypt" class="btn btn-outline-primary">Encrypt</button>
-                        </td>
-                        <td>
-                            <button id="performDecrypt" class="btn btn-outline-info">Decrypt</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="form-group">
-                <label>Once the text is encrypted or decrypted, it will show up below.</label>
-                <textarea class="form-control" id="processedText" rows="3"></textarea>
-            </div>
-        </form>
-        <footer class="footer">
+        <textarea id="text" class="form-control" placeholder="Enter the text you want to encrypt or decrypt" rows="3" autofocus></textarea>
+        <button id="copy" class="btn btn-outline-info btn-sm">Copy</button>
+        <button id="clear" class="btn btn-outline-warning btn-sm">Clear</button>
+        <textarea id="passphrase" class="form-control" placeholder="Enter a pass phrase" row="3"></textarea>
+        <button class="btn btn-primary btn-sm" id="random"><i class="fa fa-random"></i> Randomize</button>
+        <button class="btn btn-danger btn-sm" id="encrypt"><i class="fa fa-lock"></i> Encrypt</button>
+        <button class="btn btn-success btn-sm" id="decrypt"><i class="fa fa-unlock-alt"></i> Decrypt</button>
+        <footer class="footer ">
             <p>&copy; Cornell Tech 2017</p>
         </footer>
     </div>
     <!-- /container -->
-    <!-- Vendor JS -->
-    <script src="js/vendor/jquery/jquery-3.2.1.min.js"></script>
-    <script src="js/vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="js/vendor/BigInteger/BigInteger.min.js"></script>
-    <script src="js/vendor/RSA/RSA.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript " src="js/vendor/jquery/jquery-3.2.1.min.js "></script>
+    <!-- Crypto JS -->
+    <script type="text/javascript " src="js/vendor/cryptojs/rollups/aes.js "></script>
     <!-- Custom JS -->
-    <script src="js/min/popup.min.js"></script>
-    <script src="js/min/encrypter.min.js"></script>
-    <script src="js/min/processorTool.min.js"></script>
-    <script src="js/min/ui.min.js"></script>
-    <script src="js/min/generateKeys.min.js"></script>
+    <script type="text/javascript " src="js/min/popup.min.js "></script>
 </body>
 
 </html>
