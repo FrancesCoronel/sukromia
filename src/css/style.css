@@ -1,15 +1,16 @@
 /* Space out content a bit */
 
-html {
-    width: 300px;
-}
-
 body {
     padding-top: 1rem;
     padding-bottom: .5em;
     text-align: center;
+    width:  100%;
+    min-width: 275px;
 }
 
+.form-control {
+    font-size: 75%;
+}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 
@@ -22,8 +23,9 @@ body {
 /* Custom page footer */
 
 .footer {
-    padding-top: .5em;
+    padding-top: 1em;
     color: #777;
+    font-size: 75%;
 }
 
 

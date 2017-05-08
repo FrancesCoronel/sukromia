@@ -1,5 +1,10 @@
-$(document).ready(function() {
+chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
+    if (message.type == "selectionText") {
+        $("#text").val(message.text);
+    }
+});
 
+$(document).ready(function() {
     /**
      * Generates and returns a random password.
      * @return A password consisting of 20 random characters.
@@ -130,10 +135,11 @@ $(document).ready(function() {
             getCipher().done(function(cipher) {
                 var ciphertext = encryptString(cipher, $("#text").val(), $("#passphrase").val());
                 $("#text").val(ciphertext);
+
                 copyText();
             });
         } else {
-            alert("Please enter some text to encrypt first.");
+            message("Please enter some text to encrypt first.");
         }
     });
 
@@ -142,10 +148,11 @@ $(document).ready(function() {
             getCipher().done(function(cipher) {
                 var plaintext = decryptString(cipher, $("#text").val(), $("#passphrase").val());
                 $("#text").val(plaintext);
+
                 copyText();
             });
         } else {
-            alert("Please enter text to decrypt first.");
+            message("Please enter text to decrypt first.");
         }
     });
 
@@ -162,11 +169,4 @@ $(document).ready(function() {
         $("#passphrase").val("");
     });
 
-
-});
-
-chrome.runtime.onMessage.addListener(function(message, sender, sendResponse) {
-    if (message.type == "selectionText") {
-        $("#text").val(message.text);
-    }
 });

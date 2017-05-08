@@ -8,7 +8,7 @@ Sukromia is an in-browser encryption tool that allows any messaging service to i
 
 We recognize Internet security as more important than ever and wanted to create a way to make it easy for a user to send and receive messages more securely on whichever social platform you use. Our goal is to protect the privacy of Internet users, regardless of their skills or the application on which they communicate.
 
-![Showcase](https://i.imgur.com/IC4wg2Z.png)
+![Showcase](https://i.imgur.com/oFcezbj.png)
 
 ## Installation
 

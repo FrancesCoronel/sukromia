@@ -8,15 +8,11 @@ function decrypt(a, b, c) {
 
 function launchPopup(callback) {
     chrome.windows.getCurrent(function() {
-        var width = screen.width - 350;
-        var height = screen.height / 2 - 220;
         chrome.windows.create({
             url: chrome.extension.getURL('./popup.html'),
             type: 'popup',
-            top: height,
-            left: width,
-            width: 429,
-            height: 400
+            width: 550,
+            focused: true
         }, callback);
     });
 }
