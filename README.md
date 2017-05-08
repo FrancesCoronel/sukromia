@@ -8,13 +8,15 @@ Sukromia is an in-browser encryption tool that allows any messaging service to i
 
 We recognize Internet security as more important than ever and wanted to create a way to make it easy for a user to send and receive messages more securely on whichever social platform you use. Our goal is to protect the privacy of Internet users, regardless of their skills or the application on which they communicate.
 
+![Showcase](https://i.imgur.com/IC4wg2Z.png)
+
 ## Installation
 
 To install the Chrome extension...
 
 > Unpacked
 
-1. Download the extension as a `ZIP` file from the `Releases` page [here]()
+1. Download the extension as a `ZIP` file from the `Releases` page [here](https://github.com/fvcproductions/sukromia/releases)
 2. Unzip file
 2. Go to `chrome://extensions`
 3. Switch `Developer mode` on
@@ -23,7 +25,7 @@ To install the Chrome extension...
 
 > Packed
 
-1. Download the extension as a `crx` file from the `Releases` page [here]()
+1. Download the extension as a `crx` file from the `Releases` page [here](https://github.com/fvcproductions/sukromia/releases)
 2. Drag and drop the file into your Chrome browser window.
 3. Done!
 
