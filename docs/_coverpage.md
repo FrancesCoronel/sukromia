@@ -1,4 +1,4 @@
-<img src="https://github.com/fvcproductions/sukromia/raw/master/src/img/logo.png">
+<img src="https://github.com/fvcproductions/sukromia/blob/master/src/img/logo.png?raw=true">
 
 # Sukromia <small>1.0</small>
 
